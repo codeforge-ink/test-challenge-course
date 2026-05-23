@@ -1,0 +1,32 @@
+schemaVersion: 1
+slug: test-challenge
+title: 构建 Mini Redis
+description: 从 RESP 协议解析开始，实现 PING、ECHO、SET 和 GET，完成一个可测试的 Redis-like 内存服务。
+difficulty: medium
+estimatedHours: 4
+visibility: public
+
+languages:
+  - key: python
+    title: Python
+    starterTemplate: starter_templates/python
+    dockerfile: dockerfiles/python.Dockerfile
+    solutionPath: solutions/python
+
+tester:
+  repo: https://github.com/codeforge-ink/test-challenge-course-tester.git
+  tag: v0.1.0
+
+stages:
+  - slug: resp-parser
+    title: 解析 RESP 请求
+    file: stages/01-resp-parser.md
+    difficulty: easy
+  - slug: ping-echo
+    title: 实现 PING 和 ECHO
+    file: stages/02-ping-echo.md
+    difficulty: easy
+  - slug: set-get
+    title: 实现 SET 和 GET
+    file: stages/03-set-get.md
+    difficulty: medium
