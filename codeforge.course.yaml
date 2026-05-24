@@ -23,7 +23,7 @@ languages:
     solutionPath: solutions/python
 
 tester:
-  repo: https://github.com/codeforge-ink/test-challenge-course-tester.git
+  repo: git@github.com:codeforge-ink/test-challenge-course-tester.git
   tag: v0.1.0
 
 stages:
