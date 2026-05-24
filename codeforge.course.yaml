@@ -3,8 +3,17 @@ slug: test-challenge
 title: 构建 Mini Redis
 description: 从 RESP 协议解析开始，实现 PING、ECHO、SET 和 GET，完成一个可测试的 Redis-like 内存服务。
 difficulty: medium
+icon: database
+outcome: 实现一个支持基础 Redis 命令的内存键值服务，并理解 RESP 请求/响应格式。
 estimatedHours: 4
 visibility: public
+prerequisites:
+  - Python 基础语法
+  - TCP/socket 基本概念
+learningGoals:
+  - 解析 RESP 数组和批量字符串
+  - 设计命令分发循环
+  - 实现基础内存键值读写
 
 languages:
   - key: python
