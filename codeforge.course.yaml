@@ -8,7 +8,7 @@ outcome: 实现一个支持基础 Redis 命令的内存键值服务，并理解 
 estimatedHours: 4
 visibility: public
 prerequisites:
-  - Python 基础语法
+  - Python 或 C++ 基础语法
   - TCP/socket 基本概念
 learningGoals:
   - 解析 RESP 数组和批量字符串
@@ -21,6 +21,11 @@ languages:
     starterTemplate: starter_templates/python
     dockerfile: dockerfiles/python.Dockerfile
     solutionPath: solutions/python
+  - key: cpp
+    title: C++
+    starterTemplate: starter_templates/cpp
+    dockerfile: dockerfiles/cpp.Dockerfile
+    solutionPath: solutions/cpp
 
 tester:
   repo: git@github.com:codeforge-ink/test-challenge-course-tester.git
